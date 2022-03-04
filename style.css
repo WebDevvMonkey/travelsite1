@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@200&family=Cedarville+Cursive&family=Mea+Culpa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600;1,700&family=Shizuru&family=The+Nautigal&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* showcase layout */
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40 px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* X icon layout */
+.toggle.active {
+    background:url(1110973_close_essential_set_x_icon.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+/* Menu icon layout */
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background:url(5957012_menu_icon.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* How to make video it screen OPACITY is how tetx will show behind video */
+.showcase video {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2{
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+    color: white;
+}
+
+.text a{
+    display: inline-block;
+    font-size: 1em;
+    background: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+/* creates hover effect on button */
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+/* invert changes the color of the icons to white */
+.social li a {
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5;
+    }
+
+    /* -15 moves icons up positive moves it down */
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+}
+
+
+/* sets position of menu */
+.menu {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* sets position of menu */
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+
+/* sets font and color of menu */
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+/* sets color of hover over menu */
+.menu ul li a:hover {
+    color:lightblue;
+}
+
+@media(max-width: 798px) {
+    .showcase, .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+            </header>
+            <video src="video (2).mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>Come Visit</h2>
+                <h3>One Of Our Amazing Resorts</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt earum voluptates dicta ratione, modi assumenda, unde repellat fugiat eum, quod fugit fuga eligendi error. Quaerat unde quos perspiciatis cum laudantium.</p>
+                <a href="#">Explore</a>
+            </div>
+<ul class="social">
+    <li><a href="#"><img src="5282541_fb_social media_facebook_facebook logo_social network_icon (2).png"></a></li>
+    <li><a href="#"><img src="5282551_tweet_twitter_twitter logo_icon (2).png"></a></li>
+    <li><a href="#"><img src="5282544_camera_instagram_social media_social network_instagram logo_icon (1).png"></a></li>
+</ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Resorts</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+    </div>
+    <!-- JAVA SCRIPT FOR MENU INTERACTIONS-->
+    <script>
+        const menutoggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+     menutoggle.addEventListener('click', () => {
+     menutoggle.classList.toggle('active')
+     showcase.classList.toggle('active')
+        })
+        </script>
+</body>
+</html>
